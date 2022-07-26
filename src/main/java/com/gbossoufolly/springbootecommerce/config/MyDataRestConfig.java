@@ -16,7 +16,6 @@ import javax.persistence.metamodel.EntityType;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
 @Configuration
 public class MyDataRestConfig implements RepositoryRestConfigurer {
 
@@ -48,7 +47,6 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
         // call an internal helper method
         exposeIds(config);
     }
-
     private void disableHttpMethodes(Class theClass, RepositoryRestConfiguration config, HttpMethod[] theUnsupportedActions) {
         config.getExposureConfiguration()
                 .forDomainType(theClass)
