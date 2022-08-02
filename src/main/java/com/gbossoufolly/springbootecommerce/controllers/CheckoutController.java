@@ -4,7 +4,6 @@ import com.gbossoufolly.springbootecommerce.dto.Purchase;
 import com.gbossoufolly.springbootecommerce.dto.PurchaseResponse;
 import com.gbossoufolly.springbootecommerce.services.CheckoutService;
 import org.springframework.web.bind.annotation.*;
-@CrossOrigin("http://localhost:4200")
 @RestController
 @RequestMapping("/api/checkout")
 public class CheckoutController {
